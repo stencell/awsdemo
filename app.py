@@ -18,7 +18,7 @@ def getzips():
     try:
         conn = psycopg2.connect(database=os.environ.get('POSTGRES_DB'), user=os.environ.get('POSTGRES_USER'),
                                 host=os.environ.get('POSTGRES_HOST'), password=os.environ.get('POSTGRES_PASSWORD'),
-                                port=os.environ.get('PORT))
+                                port=os.environ.get('PORT'))
     except:
         print("couldn't make connection" + os.environ.get('POSTGRES_HOST'))
 
@@ -45,7 +45,7 @@ def getairports():
     try:
         conn = psycopg2.connect(database=os.environ.get('POSTGRES_DB'), user=os.environ.get('POSTGRES_USER'),
                                 host=os.environ.get('POSTGRES_HOST'), password=os.environ.get('POSTGRES_PASSWORD'),
-                                port=os.environ.get('PORT))
+                                port=os.environ.get('PORT'))
     except:
         print(os.environ.get('POSTGRES_HOST'))
 
@@ -75,7 +75,7 @@ def dbexample():
     try:
         conn = psycopg2.connect(database=os.environ.get('POSTGRES_DB'), user=os.environ.get('POSTGRES_USER'),
                             host=os.environ.get('POSTGRES_HOST'), password=os.environ.get('POSTGRES_PASSWORD'),
-                                port=os.environ.get('PORT))
+                                port=os.environ.get('PORT'))
     except:
         print(os.environ.get('POSTGRES_HOST'))
 
